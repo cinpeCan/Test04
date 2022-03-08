@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/hall_bj">
+    <!--左边的抽奖图标-->
+    <LinearLayout
+        android:id="@+id/Item_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:background="#00000000"
+            android:layout_gravity="center"
+            android:src="@mipmap/hall_item_zhuangpan" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="#00000000"
+            android:src="@mipmap/hall_item_daili" />
+    </LinearLayout>
+    <!--Logo的图标-->
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="107dp"
+        android:layout_marginTop="21dp"
+        android:src="@mipmap/hall_item_logo" />
+    <!--左边的入口图标-->
+    <LinearLayout
+        android:id="@+id/join"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="35dp"
+        android:layout_toRightOf="@id/Item_left"
+        android:background="@drawable/hall_join_stype"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/Player"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="9dp">
+
+            <ImageButton
+                android:id="@+id/Player_head"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="12dp"
+                android:background="#30FFFFFF"
+                android:padding="1dp"
+                android:src="@mipmap/head" />
+
+            <TextView
+                android:id="@+id/Player_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/Player_head"
+                android:layout_toRightOf="@id/Player_head"
+                android:paddingLeft="5dp"
+                android:shadowColor="#96273557"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="3.0"
+                android:text="玩家ID"
+                android:textColor="#fffefefe"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/Player_ID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/Player_head"
+                android:layout_toRightOf="@id/Player_head"
+                android:paddingLeft="5dp"
+                android:shadowColor="#96273557"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="3.0"
+                android:text="ID:710314228"
+                android:textColor="#fffefefe"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="160dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center_horizontal"
+            android:background="#20FFFFFF"
+            android:padding="3dp" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:padding="0dp"
+            android:src="@mipmap/hall_join_qinyouquan" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:padding="0dp"
+            android:src="@mipmap/hall_join_chuangjianfangjian" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:padding="0dp"
+            android:src="@mipmap/hall_join_jiarufangjian" />
+
+
+    </LinearLayout>
+    <!--左下角的菜单图标-->
+    <RelativeLayout
+        android:id="@+id/item_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <ImageButton
+            android:id="@+id/item_gengduo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="#00000000"
+            android:src="@mipmap/hall_item_gengduo" />
+
+
+        <ImageButton
+            android:id="@+id/item_shangcheng"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/item_gengduo"
+            android:layout_marginLeft="28dp"
+            android:layout_toRightOf="@id/item_gengduo"
+            android:background="#00000000"
+            android:src="@mipmap/hall_item_shangcheng" />
+
+
+        <ImageButton
+            android:id="@+id/item_zhanji"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/item_shangcheng"
+            android:layout_marginLeft="26dp"
+            android:layout_toRightOf="@id/item_shangcheng"
+            android:background="#00000000"
+            android:src="@mipmap/hall_item_zhanji" />
+
+        <ImageButton
+            android:id="@+id/item_tuiguang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/item_zhanji"
+            android:layout_marginLeft="26dp"
+            android:layout_toRightOf="@id/item_zhanji"
+            android:background="#00000000"
+            android:src="@mipmap/hall_item_tuiguang" />
+
+        <ImageButton
+            android:id="@+id/item_fenxiang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/item_tuiguang"
+            android:layout_marginLeft="26dp"
+            android:layout_toRightOf="@id/item_tuiguang"
+            android:background="#00000000"
+            android:src="@mipmap/hall_item_fenxiang" />
+
+
+        <TextView
+            android:id="@+id/item_gengduo_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_gengduo"
+            android:layout_alignLeft="@id/item_gengduo"
+            android:layout_marginTop="2dp"
+            android:text="更多"
+            android:textColor="#ffffc96d"
+            android:textSize="13sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_alignLeft="@id/item_shangcheng"
+            android:layout_alignBottom="@id/item_gengduo_text"
+            android:text="商城"
+            android:textColor="#ffffc96d"
+            android:textSize="13sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/item_zhanji"
+            android:layout_alignBottom="@id/item_gengduo_text"
+
+            android:text="战绩"
+            android:textColor="#ffffc96d"
+            android:textSize="13sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/item_tuiguang"
+            android:layout_alignBottom="@id/item_gengduo_text"
+            android:text="推广"
+            android:textColor="#ffffc96d"
+            android:textSize="13sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/item_fenxiang"
+            android:layout_alignBottom="@id/item_gengduo_text"
+            android:layout_marginTop="2dp"
+            android:text="分享"
+            android:textColor="#ffffc96d"
+            android:textSize="13sp" />
+
+    </RelativeLayout>
+    <!--右上角的游戏图标-->
+    <RelativeLayout
+        android:layout_width="353dp"
+        android:layout_height="315dp"
+        android:layout_alignTop="@id/join"
+        android:layout_toRightOf="@id/join"
+        android:paddingLeft="30dp">
+
+        <TextView
+            android:id="@+id/item_lunboguanggao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#30020202"
+            android:hint="最正宗的仙游麻将欢迎体验，诚招推广员"
+            android:padding="2dp"
+            android:textColor="#ffffffff"
+            android:textSize="15sp" />
+
+        <ImageButton
+            android:id="@+id/item_xianyoumajiang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_lunboguanggao"
+            android:layout_alignLeft="@id/item_lunboguanggao"
+            android:background="#00000000"
+            android:src="@mipmap/hall_game_xianyoumajiang_black" />
+
+        <ImageButton
+            android:id="@+id/item_paodekuai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/item_xianyoumajiang"
+            android:layout_toRightOf="@id/item_xianyoumajiang"
+            android:layout_marginLeft="@dimen/item_game_space"
+            android:padding="0dp"
+            android:src="@mipmap/hall_game_paodekuai_black" />
+
+        <ImageButton
+            android:id="@+id/item_putianshiliuzhang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/item_paodekuai"
+            android:layout_toRightOf="@id/item_paodekuai"
+            android:layout_marginLeft="@dimen/item_game_space"
+            android:padding="0dp"
+            android:src="@mipmap/hall_game_putianshiliuzhang_black" />
+
+        <ImageButton
+            android:id="@+id/item_putianshisanzhang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/item_putianshiliuzhang"
+            android:layout_toRightOf="@id/item_putianshiliuzhang"
+            android:layout_marginLeft="@dimen/item_game_space"
+            android:padding="0dp"
+            android:src="@mipmap/hall_game_putianshisanzhangblack" />
+
+        <ImageButton
+            android:id="@+id/item_xianyouzhabang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_xianyoumajiang"
+            android:layout_alignLeft="@+id/item_xianyoumajiang"
+            android:layout_marginTop="36dp"
+            android:background="#00000000"
+            android:src="@mipmap/hall_game_xianyouzhabang_black" />
+
+        <ImageButton
+            android:id="@+id/item_puxianchuiniu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/item_xianyouzhabang"
+            android:layout_toRightOf="@id/item_xianyouzhabang"
+            android:layout_marginLeft="@dimen/item_game_space"
+            android:padding="0dp"
+            android:src="@mipmap/hall_game_puxianchuiniu_black" />
+
+        <ImageButton
+            android:id="@+id/item_yuezhan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/item_puxianchuiniu"
+            android:layout_toRightOf="@id/item_puxianchuiniu"
+            android:layout_marginLeft="@dimen/item_game_space"
+            android:padding="0dp"
+            android:src="@mipmap/hall_game_yuezhanblack" />
+
+        <ImageButton
+            android:id="@+id/item_doudizhu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/item_yuezhan"
+            android:layout_toRightOf="@id/item_yuezhan"
+            android:layout_marginLeft="@dimen/item_game_space"
+            android:padding="0dp"
+            android:src="@mipmap/hall_game_doudizhu" />
+        <!--右下角的圈卡商城-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/item_gold_shop"
+            android:layout_alignBottom="@id/item_gold_shop"
+            android:layout_marginRight="15dp">
+
+            <ImageView
+                android:id="@+id/item_quanka"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="8dp"
+
+                android:src="@mipmap/hall_item_quanka" />
+
+            <ImageButton
+                android:id="@+id/item_quanka_buy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="1dp"
+                android:layout_gravity="bottom"
+                android:padding="0dp"
+
+                android:src="@mipmap/hall_item_jia" />
+        </LinearLayout>
+        <!--右下角的宝箱商城-->
+        <LinearLayout
+            android:id="@+id/item_gold_shop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/item_fangka_shop"
+            android:layout_alignBottom="@id/item_fangka_shop"
+            android:layout_marginRight="22dp"
+            android:background="#50ffffff"
+            android:orientation="horizontal"
+            android:padding="0dp">
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="99999"
+                android:paddingLeft="20dp"
+                android:textColor="#fffefefe"
+                android:textSize="13sp" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/hall_item_jia"
+                android:layout_gravity="center"
+                android:padding="0dp"/>
+        </LinearLayout>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/hall_item_gold"
+            android:layout_marginRight="-18dp"
+            android:layout_toLeftOf="@id/item_gold_shop"
+            android:layout_alignBottom="@id/item_gold_shop"/>
+        <!--右下角的房卡商城-->
+        <LinearLayout
+            android:id="@+id/item_fangka_shop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#50ffffff"
+            android:orientation="horizontal"
+            android:layout_marginRight="28dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:padding="0dp">
+
+
+
+            <TextView
+                android:id="@+id/item_fangka_num"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="12dp"
+                android:gravity="center"
+                android:text="99999"
+                android:textColor="#fffefefe"
+                android:textSize="13sp" />
+
+            <ImageButton
+                android:id="@+id/item_fangka_buy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="0dp"
+                android:src="@mipmap/hall_item_jia" />
+        </LinearLayout>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/item_fangka_shop"
+            android:layout_alignBottom="@id/item_fangka_shop"
+            android:layout_marginRight="-14dp"
+            android:src="@mipmap/hall_item_fangka" />
+    </RelativeLayout>
+
+</RelativeLayout>

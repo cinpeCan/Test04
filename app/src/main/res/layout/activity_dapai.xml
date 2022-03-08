@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg"
+    tools:context=".dapaiActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/text_fangjian_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="6dp"
+            android:text="房间号："
+            android:textColor="#fffffefe"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/text_fangjian_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/text_fangjian_name"
+            android:layout_alignBottom="@id/text_fangjian_name"
+            android:layout_toRightOf="@id/text_fangjian_name"
+            android:gravity="center"
+            android:text="65535"
+            android:textColor="#fffffefe"
+            android:textSize="15sp" />
+        <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content" />-->
+        <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content" />-->
+
+        <FrameLayout
+            android:id="@+id/P2cp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="91dp"
+            android:layout_toLeftOf="@id/P2BackC"
+
+            >
+
+
+        </FrameLayout>
+
+        <ImageView
+            android:id="@+id/P1Head"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="30dp"
+            android:background="#000000"
+            android:scaleType="center"
+            android:src="@mipmap/head" />
+
+
+        <ImageView
+            android:id="@+id/P2Head"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="99dp"
+            android:layout_marginRight="60dp"
+            android:background="#000000"
+            android:scaleType="center"
+            android:src="@mipmap/head" />
+
+        <ImageView
+            android:id="@+id/P3Head"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignTop="@id/P2Head"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#000000"
+            android:scaleType="center"
+            android:src="@mipmap/head" />
+
+        <FrameLayout
+            android:id="@+id/P3cp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/P2cp"
+            android:layout_toRightOf="@id/P3BackC"
+            android:tooltipText="这是玩家三的出牌区域"
+            >
+
+
+        </FrameLayout>
+
+        <ImageView
+            android:id="@+id/P2BackC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/P2Head"
+            android:layout_marginLeft="10dp"
+            android:layout_toLeftOf="@id/P2Head"
+            android:src="@mipmap/paibeimian"
+
+            />
+
+        <ImageView
+            android:id="@+id/P3BackC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/P3Head"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@id/P3Head"
+            android:src="@mipmap/paibeimian"
+
+            />
+        <!--要不起的提示-->
+        <TextView
+            android:id="@+id/P1yaobuqi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cpButton"
+            android:layout_marginTop="5dp"
+            android:layout_centerHorizontal="true"
+            android:textColor="#FFC71585"
+            android:textSize="18sp"
+            android:visibility="invisible"
+            android:text="不出"/>
+        <TextView
+            android:id="@+id/P2yaobuqi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/P2BackC"
+            android:layout_alignTop="@id/P2BackC"
+            android:layout_alignBottom="@id/P2BackC"
+            android:gravity="center"
+            android:textColor="#FFC71585"
+            android:textSize="18sp"
+            android:visibility="invisible"
+            android:text="不出"/>
+        <TextView
+            android:id="@+id/P3yaobuqi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/P3BackC"
+            android:layout_alignTop="@id/P3BackC"
+            android:layout_alignBottom="@id/P2BackC"
+            android:gravity="center"
+            android:textColor="#FFC71585"
+            android:textSize="18sp"
+            android:visibility="invisible"
+            android:text="不出"/>
+        <!--剩余牌数的提示-->
+        <TextView
+            android:id="@+id/P2shengyu"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/P2Head"
+            android:layout_alignBottom="@id/P2Head"
+            android:layout_marginLeft="10dp"
+            android:layout_toLeftOf="@id/P2Head"
+            android:textColor="#FFC71585"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:text=" 17 "/>
+        <TextView
+            android:id="@+id/P3shengyu"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/P3Head"
+            android:layout_alignBottom="@id/P3Head"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@id/P3Head"
+            android:textColor="#FFC71585"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:text="17"/>
+
+        <FrameLayout
+            android:id="@+id/shoupai"
+            android:layout_width="wrap_content"
+            android:layout_height="135dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true">
+            <!--<ImageView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:src="@mipmap/sppuke_0"/>-->
+
+        </FrameLayout>
+        //出牌
+        <Button
+            android:id="@+id/cpButton"
+            android:layout_width="60dp"
+            android:layout_height="20dp"
+            android:layout_toRightOf="@id/tsButton"
+            android:layout_marginLeft="20dp"
+            android:layout_alignBottom="@id/tsButton"
+            android:background="@mipmap/btn_cp"
+            android:onClick="text" />
+        //不出
+        <Button
+            android:id="@+id/bcButton"
+            android:layout_width="60dp"
+            android:layout_height="20dp"
+            android:layout_toLeftOf="@id/tsButton"
+            android:layout_marginRight="20dp"
+            android:layout_alignBottom="@id/tsButton"
+            android:background="@mipmap/btn_bc"
+            android:onClick="text_bc" />
+        //提示
+        <Button
+            android:id="@+id/tsButton"
+            android:layout_width="60dp"
+            android:layout_height="20dp"
+            android:layout_centerInParent="true"
+
+            android:background="@mipmap/btn_ts"
+            android:onClick="text_ts" />
+
+        <FrameLayout
+            android:id="@+id/P1cp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/tsButton"
+
+            android:layout_above="@id/shoupai"
+
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="0dp">
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/DP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true">
+
+        </FrameLayout>
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
